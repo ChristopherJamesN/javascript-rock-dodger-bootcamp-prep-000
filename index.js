@@ -77,6 +77,7 @@ function createRock(x) {
 
     rock.style.top.replace('px', '')
     rock.style.top = (`${top+2}px`)
+    top += 2
     // implement me!
     // (use the comments below to guide you!)
     /**
