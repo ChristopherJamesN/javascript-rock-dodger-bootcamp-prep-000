@@ -61,7 +61,7 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = 0
 
-  rock.style.top = `${top}px`
+  rock.style.top = top
 
   /**
    * Now that we have a rock, we'll need to append
@@ -76,8 +76,7 @@ function createRock(x) {
   function moveRock() {
 
     top += 2
-    rock.style.top.replace('px', '')
-    rock.style.top = (`${top}px`)
+    rock.style.top = top
     // implement me!
     // (use the comments below to guide you!)
     /**
