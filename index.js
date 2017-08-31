@@ -67,7 +67,7 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-    GAME.addEventListener(rock)
+    GAME.Add(rock)
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
