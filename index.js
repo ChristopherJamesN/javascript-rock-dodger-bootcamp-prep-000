@@ -75,7 +75,8 @@ function createRock(x) {
    */
   function moveRock() {
 
-    top = top + 2
+    rock.style.top.replace('px', '')
+    rock.style.top = (`${top+2}px`)
     // implement me!
     // (use the comments below to guide you!)
     /**
@@ -92,8 +93,6 @@ function createRock(x) {
      else if (top>360) {
        moveRock()
      }
-
-
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
@@ -101,8 +100,6 @@ function createRock(x) {
      else {
        rock.remove()
      }
-
-
   }
 
   // We should kick of the animation of the rock around here
