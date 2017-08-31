@@ -75,9 +75,9 @@ function createRock(x) {
    */
   function moveRock() {
 
-    rock.style.top.replace('px', '')
-    rock.style.top = (`${top+2}px`)
     top += 2
+    rock.style.top.replace('px', '')
+    rock.style.top = (`${top}px`)
     // implement me!
     // (use the comments below to guide you!)
     /**
